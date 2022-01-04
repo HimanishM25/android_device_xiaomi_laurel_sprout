@@ -60,11 +60,12 @@ PRODUCT_PACKAGES += \
 
 # Biometrics
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml 
 
 PRODUCT_PACKAGES += \
-    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service
+    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+    vendor.xiaomi.hardware.fingerprintextension@1.0
 
 # Bluetooth
 PRODUCT_PACKAGES += \
