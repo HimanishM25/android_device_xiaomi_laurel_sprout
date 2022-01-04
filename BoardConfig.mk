@@ -75,6 +75,10 @@ TARGET_SCREEN_DENSITY := 320
 # Gestures
 TARGET_TAP_TO_WAKE_EVENT_NODE  := "/dev/input/event2"
 
+#Hacks
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/xiaomi_vendor_framework_compatibility_matrix.xml \
