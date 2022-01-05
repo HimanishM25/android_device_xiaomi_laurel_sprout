@@ -101,14 +101,9 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-#TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
-TARGET_KERNEL_VERSION := 4.14
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_CLANG_COMPILE := true
-#TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_PREBUILT_KERNEL := device/xiaomi/laurel_sprout/Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Lights
