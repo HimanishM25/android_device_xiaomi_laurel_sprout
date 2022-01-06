@@ -126,8 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.3-service.clearkey
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
@@ -140,15 +139,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
     vendor.display.disable_rotator_downscale=1
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.gatekeeper@1.0.vendor
-
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.gatekeeper.disable_spu=true
-    
 # GPS
 LOC_HIDL_VERSION = 4.0
 
@@ -193,11 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.crypto.volume.metadata.method=dm-default-key \
     ro.hardware.keystore_desede=true
-    
-PRODUCT_PACKAGES += \
-   android.hardware.keymaster@4.1 \
-   android.hardware.keymaster@4.1.vendor
-   
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
