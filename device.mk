@@ -54,14 +54,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
-# Biometrics
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml 
+# # Biometrics (temp. disabled till source updates)
+# PRODUCT_COPY_FILES += \
+#     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml 
 
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
-    vendor.xiaomi.hardware.fingerprintextension@1.0
+# PRODUCT_PACKAGES += \
+#     android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout \
+#     libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
+#     vendor.xiaomi.hardware.fingerprintextension@1.0
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -192,9 +192,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPALaurelFrameworks \
-    AOSPALaurelSettings \
-    AOSPALaurelSystemUI \
+    ConquerLaurelFrameworks \
+    ConquerLaurelSettings \
+    ConquerLaurelSystemUI \
     FrameworksResTarget \
     LaurelFrameworks \
     LaurelSystemUI
@@ -203,9 +203,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.power.pasr.enabled=true
 
-# ParanoidDoze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.proximity=true \
