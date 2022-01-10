@@ -1,4 +1,4 @@
-service fps_hal.laurel_sprout /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.laurel_sprout
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.xiaomi_laurel_sprout
     class late_start
     user system
     group system input uhid
@@ -14,7 +14,7 @@ on boot
     chown system system /sys/devices/virtual/touch/tp_dev/fod_status
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
     chmod 0660 /sys/devices/virtual/touch/tp_dev/fod_status
-
+    
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/wakeup_enable

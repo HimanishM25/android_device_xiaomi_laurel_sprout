@@ -4,6 +4,9 @@
 # Fingerprint
 /dev/goodix_fp                                                                                 u:object_r:fingerprint_device:s0
 /data/vendor/goodix(/.*)?                                                                      u:object_r:fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?                                          u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                       u:object_r:fingerprint_data_file:s0
+/sys/devices/virtual/touch/tp_dev/fod_status                    u:object_r:sysfs_fod:s0
 
 # Fingerprint Sysfs nodes
 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param               u:object_r:vendor_sysfs_fod:s0
@@ -12,3 +15,6 @@
 
 # IR
 /dev/spidev[0-9]\.1                                                                            u:object_r:lirc_device:s0
+
+#HALs
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_laurel_sprout              u:object_r:hal_fingerprint_default_exec:s0
