@@ -16,7 +16,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit from violet device
-$(call inherit-product, device/xiaomi/violet/device.mk)
+$(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 # Inherit some common ConquerOS stuff.
 $(call inherit-product, vendor/conquer/config/common.mk)
