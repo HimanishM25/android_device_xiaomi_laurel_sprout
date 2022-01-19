@@ -27,7 +27,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Mi A3
-PRODUCT_NAME := aospa_laurel_sprout
+PRODUCT_NAME := havoc_laurel_sprout
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
